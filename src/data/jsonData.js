@@ -1,58 +1,54 @@
 export const json = [
-
   {
-    "id": "1",
+    id: '1',
 
-    "videoName": "Blower Test",
+    videoName: 'Blower Test',
 
-    "videodescription": "Blower Test description",
+    videodescription: 'Blower Test description',
 
-    "VideoURL": "https://github.com/babel/babel",
+    VideoURL: 'https://github.com/babel/babel',
 
-    "videoStatus": true,
+    videoStatus: true,
 
-    "categoryName": "Configuration"
+    categoryName: 'Configuration',
+  },
+  {
+    id: '2',
 
-  }, {
+    videoName: 'Smart Charge',
 
-    "id": "2",
+    videodescription: 'Smart charge description',
 
-    "videoName": "Smart Charge",
+    VideoURL: 'https://github.com/babel/babel',
 
-    "videodescription": "Smart charge description",
+    videoStatus: true,
 
-    "VideoURL": "https://github.com/babel/babel",
+    categoryName: 'Configuration',
+  },
+  {
+    id: '3',
 
-    "videoStatus": true,
+    videoName: 'Accessories Test',
 
-    "categoryName": "Configuration"
+    videodescription: 'Accessories Test description',
 
-  }, {
+    VideoURL: 'https://github.com/babel/babel',
 
-    "id": "3",
+    videoStatus: true,
 
-    "videoName": "Accessories Test",
+    categoryName: 'Configuration',
+  },
+  {
+    id: '4',
 
-    "videodescription": "Accessories Test description",
+    videoName: 'Verification Test',
 
-    "VideoURL": "https://github.com/babel/babel",
+    videodescription: 'Verification Test description',
 
-    "videoStatus": true,
+    VideoURL: 'https://github.com/babel/babel',
 
-    "categoryName": "Configuration"
+    videoStatus: false,
 
-  }, {
-
-    "id": "4",
-
-    "videoName": "Verification Test",
-
-    "videodescription": "Verification Test description",
-
-    "VideoURL": "https://github.com/babel/babel",
-
-    "videoStatus": false,
-
-    "categoryName": "Configuration"
-
-  }]
+    categoryName: 'Configuration',
+  },
+];

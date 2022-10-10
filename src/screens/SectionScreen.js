@@ -18,9 +18,7 @@ const Item = ({data}) => (
     </View>
     <View style={styles.row}>
       <Text style={styles.title}>Video Description:</Text>
-      <Text style={styles.title}>
-      {data.videodescription}
-      </Text>
+      <Text style={styles.title}>{data.videodescription}</Text>
     </View>
     <View style={styles.row}>
       <Text style={styles.title}>Url:</Text>
@@ -63,7 +61,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingTop: StatusBar.currentHeight,
     marginHorizontal: 16,
-    backgroundColor:'white'
+    backgroundColor: 'white',
   },
   item: {
     backgroundColor: '#8979c7',
@@ -78,10 +76,10 @@ const styles = StyleSheet.create({
     fontSize: 16,
     color: 'white',
   },
-  row:{
-      flexDirection:'row',
-    //   justifyContent:'center'   
-  }
+  row: {
+    flexDirection: 'row',
+    //   justifyContent:'center'
+  },
 });
 
 export default SectionScreen;

@@ -26,44 +26,23 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import SectionScreen from './src/screens/SectionScreen';
+import AnimationPage from './src/screens/AnimationPage';
+import Square from './src/screens/AnimationScreens/Square';
+import ScreenOne from './src/screens/reanimated/ScreenOne';
+import PanGestureHandlerScreen from './src/screens/reanimated/PanGestureHandlerScreen';
+import InterpolatewithScrollView from './src/screens/reanimated/InterpolatewithScrollView';
+import InterpolateColors from './src/screens/reanimated/InterpolateColors';
+import PinchGestureHandler from './src/screens/reanimated/PinchGestureHandler';
+import TapHandlerScreen from './src/screens/reanimated/TapHandlerScreen';
 
-const Section = ({children, title}): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-};
-
-const App: () => Node = () => {
+const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
 
-  return (
-    <SectionScreen />
-
-  );
+  return <TapHandlerScreen />;
 };
 
 const styles = StyleSheet.create({
